@@ -1,0 +1,431 @@
+/* Adding a standard CSS Reset to reduce browser inconsistencies  */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Also adding HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    line-height: inherit;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Adding the main CSS of the website */
+
+/* Adding text styles for the body + main headers of the website so that they're all the same. */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 35px;
+    padding: 15px;
+}
+
+p {
+    margin-left: 35px;
+    padding: 15px;
+}
+
+html {
+    background-color: #F7F7FF;
+}
+
+section .dlogo {
+    width: 114.74px;
+    height: 81.05;
+    margin-left: 35px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 60px;
+    text-align: left;
+    color: #333131;
+}
+
+p {
+    font-size: 24px;
+    text-align: left;
+    line-height: 29px;;
+    color: #333131;
+    padding-right: 45px;
+    padding-top: 0px;
+}
+
+/* Adding a background image of a person on a scooter */
+.backgroundimage {
+    width: 289.23px;
+    height: 211.53px;
+    margin-left: 45px;
+    margin-right: 45px;
+    padding: 20px;
+}
+
+/* Adding the "Apply Now" form */
+.applynow {
+    background-color: #ffffff;
+    box-shadow: 5px 10px 15px rgba(51, 49, 49, 0.5);
+    border-radius: 26px;
+    width: 300px;
+    height: 495px;
+    margin: auto;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 40px;
+    color: #333131;
+    text-align: left;
+    margin-left: 10px;
+    padding-top: 0;
+}
+
+h3 {
+    font-size: 16px;
+    color: #333131;
+    text-align: left;
+    margin-left: 10px;
+    padding-top: 0;
+}
+
+/* Making the "apply now" form uniform */
+#firstname,
+#lastname,
+#phonenumber,
+#emailaddress {
+    background-color: #F4F4F5;
+    margin: 6px;
+    margin-left: 20px;
+    width: 75%;
+    height: 40px;
+    border: none;
+    border-radius: 11px; 
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #9B9B9B;
+    padding-left: 10px;
+}
+
+/* Adding a checkbox and changing its styles and sizing */
+#checkbox {
+    width: 20px;
+    height: 20px;
+    margin-left: 25px;
+    border-radius: 10px;
+    vertical-align: middle;
+
+}
+
+/* Adding styles to the "drive with us" button */
+button {
+    background-color: #57EEAB;
+    border: none;
+    border-radius: 11px;
+    padding: 15px;
+    line-height: 29px;
+    align-content: center;
+    font-size: 20px;
+    width: 67%;
+    font-family:'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #333131;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+h4 {
+    margin-left: 25px;
+    margin-top: 20px;
+    align-content: left;
+    padding: 0px;
+}
+
+/* Making the "check your application status here" text a hyperlink and changing its styles */
+a,
+a:link
+a link:visited {
+    text-decoration: none;
+    color: #FF8480;  
+}
+
+/* Starting + styling the footer here */
+footer {
+    background-color: #FFFD8C;
+    width: 100%;
+}
+
+footer section {
+    background-color: #FFFD8C;
+    width: 100%;
+    margin-top: 50px;
+    width: 100%;
+    padding: 22px;
+}
+
+footer h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333131;
+    line-height: 22px;
+    margin-left: 50px;
+    word-wrap: break-word;
+    padding-top: 20px;
+}
+
+footer p {
+    font-size: 16px;
+    color: #333131;
+    line-height: 19px;
+    margin-left: 50px;
+}
+
+/* Adding the "hours" & "city" label boxes */
+#information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 30px;
+    padding-top: 10px;
+}
+
+#hours {
+    border: none;
+    border-radius: 11px;
+    width: 60px;
+    height: 40px;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+
+#city {
+    border: none;
+    border-radius: 11px;
+    width: 100px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+/* Changing the calculate button's styles  */
+#information button {
+   background-color: #FF8480;
+   color: white;
+   font-size: 24px;
+   width: 350px;
+
+}
+
+/* Spacing out the social media icons */
+.socials {
+    padding: 10px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Setting the Tablet / IPad Media Queries (biggest tablet size is 1366px) */
+@media screen and (min-width: 760px) and (max-width: 1366px) {
+    h1 {
+        font-size: 80px;
+        line-height: 97px;
+    }
+
+
+/* Making the Background image bigger and centered */
+    .backgroundimage {
+        width: 420.64px;
+        height: 307.65px;
+        display: block;
+        margin: 3% auto;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+/* Making to "Apply Now" form bigger an centered with the image */
+    .applynow {
+        width: 605px;
+        height: 596px;
+        margin: auto;
+    }
+
+/* Re-sizing the "enter your info below" text to 30px instead of 16px */
+    h3 {
+        font-size: 30px;
+    }
+
+/* Re-sizing the form and its contents */
+    #firstname,
+    #lastname,
+    #phonenumber,
+    #emailaddress {
+        width: 90%;
+        font-size: 18px;
+        height: 55px;
+    }    
+    
+    #checkbox {
+        width: 25px;
+        height: 25px;
+    }
+
+    button {
+        padding: 15px;
+        line-height: 39px;
+        font-size: 32px;
+        width: 86%;
+        margin-top: 20px;
+    }
+
+    h4 {
+        font-size: 17px;
+    }
+    
+
+/* Re-sizing the footer and styling its contents  */
+
+    footer {
+        background-color: #FFFD8C;
+        height: 200px;
+        width: 768px;
+    }
+
+
+
+
+/* Setting the Desktop Media Queries */
+@media screen and (min-width:1025px) {
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+}
