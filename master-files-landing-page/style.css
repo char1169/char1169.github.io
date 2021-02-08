@@ -148,7 +148,7 @@ html {
 
 section .dlogo {
     width: 114.74px;
-    height: 81.05;
+    height: 81.05px;
     margin-left: 35px;
     margin-bottom: 0px;
     padding: 0px;
@@ -175,7 +175,6 @@ p {
     width: 289.23px;
     height: 211.53px;
     margin-left: 45px;
-    margin-right: 45px;
     padding: 20px;
 }
 
@@ -195,7 +194,6 @@ h2 {
     font-size: 40px;
     color: #333131;
     text-align: left;
-    margin-left: 10px;
     padding-top: 0;
 }
 
@@ -254,7 +252,6 @@ button {
 h4 {
     margin-left: 25px;
     margin-top: 20px;
-    align-content: left;
     padding: 0px;
 }
 
@@ -396,31 +393,21 @@ footer p {
     }
     
 
-/* Re-sizing the footer and styling its contents  */
-
-    footer {
-        background-color: #FFFD8C;
-        height: 200px;
-        width: 768px;
-    }
-
-
-
-
 /* Setting the Desktop Media Queries */
 @media screen and (min-width:1025px) {
 
+/* Resizing the title to its approriate size for desktop */
 
 
-}
+    body {
+    padding: 25px 140px;
+
+    }
 
 
-
-
-
-
-
-
-
+    h1 {
+        font-size: 80px;
+        line-height: 97px;
+    }
 
 }
