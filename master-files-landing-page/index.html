@@ -3,28 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Adding the font-family that I will be using throught the site -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Linking the CSS to the HTML -->
     <link rel="stylesheet" href="style.css">
     <title>Dash</title>
 
 </head>
-<body>
-        <section>
+    <body>
+        <section id="body" class="body">
+
+<!-- Adding the "D" Logo image -->
             <img class="dlogo" src="images/logo/logo.png" alt="dlogo">
         </section>
-        <main>
+
+<!-- ID for the main section (includes: h1, p, background image and form) -->
+        <main id="mainsection" class="mainsection">
+            <div class="maintitle">
             <h1 class="mainheader">
                 Want to be your own boss?
             </h1>
             <p>
                 Start today and make up to $30/hr driving your own vehicle with Dash!
             </p>
-
-            <section>
-                <img class="backgroundimage" src="images/bg-image/scooter.svg" alt="backgroundimage">
+            </div>
+            <section id="imagebackground">
+                <img src="images/bg-image/scooter.svg" alt="backgroundimage" class="backgroundimage">
             </section>
-
             <section id="applynow" class="applynow">
                 <h2>
                     Apply Now
@@ -68,17 +76,17 @@
                     </h4>
             </section>
         </main>
-    
+<!-- Site's footer starts here (includes form + social icons) -->
     <footer>
-        <section>
-            <h3>
-                See how much you can earn with Dash. 
-            </h3>
-            <p>
-                how many hours do you want to drive with us this week?
-            </p>
+            <section>
+                <h3>
+                    See how much you can earn with Dash. 
+                </h3>
+                <p>
+                    how many hours do you want to drive with us this week?
+                </p>
             
-            <form>
+                    <form>
                         <div id="information" class="information">
                         <label class="hourscity"></label>
                         <input type="text" id="hours" name="hours" placeholder="Hours">
@@ -89,14 +97,15 @@
 
                          <button type="submit"> CALCULATE </button> 
                         </div>
+                    </form>
 
-            <div class="socials">
-            <img class="facebook" src="images/icons/facebook.svg" alt="facebookicon">
-            <img class="instagram" src="images/icons/instagram.svg" alt="instagramicon">
-            <img class="twitter" src="images/icons/twitter.svg" alt="twittericon">
-            <img class="linkedin" src="images/icons/linkedin.svg" alt="linkedinicon">
-            </div>
-        </section>
-    </footer>
+                        <div class="socials">
+                        <img class="facebook" src="images/icons/facebook.svg" alt="facebookicon">
+                        <img class="instagram" src="images/icons/instagram.svg" alt="instagramicon">
+                        <img class="twitter" src="images/icons/twitter.svg" alt="twittericon">
+                        <img class="linkedin" src="images/icons/linkedin.svg" alt="linkedinicon">
+                        </div>
+            </section>
+        </footer>
     </body>
 </html>

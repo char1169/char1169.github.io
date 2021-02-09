@@ -330,7 +330,7 @@ footer p {
 }
 
 /* Setting the Tablet / IPad Media Queries (biggest tablet size is 1366px) */
-@media screen and (min-width: 760px) and (max-width: 1366px) {
+@media screen and (min-width: 760px) and (max-width: 1366px){
     h1 {
         font-size: 80px;
         line-height: 97px;
@@ -387,7 +387,7 @@ footer p {
 /* Setting the Desktop Media Queries */
 @media screen and (min-width:1025px){
 
-/* Resizing the title to its approriate size for desktop */
+/* /* Resizing the background image to a bigger size + centering it */
 
     .backgroundimage {
         width: 800px;
@@ -398,7 +398,7 @@ footer p {
         font-size: 24px;
         line-height: 29px;
     }
-    
+
     #mainsection {
         display: flex;
         justify-content: space-around;
@@ -413,9 +413,5 @@ footer p {
         right: 125px;
 
     }
-
- 
-  
-
 
 }
