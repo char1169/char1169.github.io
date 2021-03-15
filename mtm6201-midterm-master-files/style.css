@@ -160,7 +160,7 @@ li.currentpage {
 
 .grow {
     transform: scale(2);
-    transition: 0.3;
+    transition: 3s;
 }
 
 .landing-page-1 h1 {
@@ -473,7 +473,7 @@ footer .social-icons {
 /* Adding a green Layer on top of the "about-image" as well as text */
 
 .about {
-    backgorund-color: #F2F2F2;
+    background-color: #F2F2F2;
 }
 .about h2{
     font-size: 30px;
@@ -792,7 +792,7 @@ iframe {
 
     .grow {
         transform: scale(2);
-        transition: 0.3;
+        transition: 3s;
     }
     /* Taking off list styles (bullet points) */
     nav ul li {
@@ -1110,10 +1110,9 @@ iframe {
     .subscribe {
         border: none;
         background-color: #26A682;
-        color: #F2F2F2#
+        color: #F2F2F2;
         font-size: 22px;
         font-weight: bold;
-        color: #F2F2F2;
         padding: 5px;
         border-radius: 40px;
         width: 140px;
@@ -1303,7 +1302,7 @@ iframe {
 
     .grow {
         transform: scale(2);
-        transition: 0.3;
+        transition: 3s;
     }
 
     /* Taking off list styles (bullet points) */
@@ -1337,7 +1336,7 @@ iframe {
 
     .container {
         display: flex;
-        align: center;
+        align-items: center;
         padding-left: 6%;
         padding-top: 20px;
     }
