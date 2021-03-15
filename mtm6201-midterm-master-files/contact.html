@@ -15,6 +15,7 @@
     
 <body>
     <header>
+        <nav>
         <ul>
             <li>
                 <img class="logo-image" src="images/logo.svg" alt="logo">
@@ -25,10 +26,14 @@
             <li>
                 <a href="about.html">About</a>
             </li>
+            <div class="grow">
             <li class="currentpage">
                 <a href="contact.html">Contact</a>
             </li>
+            </div>
+        </li>
         </ul>
+        </nav>
     </header>
 
     <main id="mainsectioncontact" class="mainsectioncontact">
@@ -41,7 +46,7 @@
                     If you have an idea for an activity that you think you and your fellow students would love to participate in that we are not already offering, we want to know about it!
                 </p>
                 <div class="contact-image-container">
-                    <img class="contacticons" src="images/contact-img.svg" alt="3 contact icons">
+                    <img class="contact-icons-image" src="images/contact-img.svg" alt="3 contact icons">
                </div>
             </div>
         </section>
@@ -74,12 +79,12 @@
                     </h3>
                     <input type="text" id="message" name="message" placeholder="Message">
                 </div>
-            </form>
             <div class="submit-button-container">
                 <button class="submitbutton" type="submit"> Submit </button>
             </div>
+        </form>
         </section>
-        <section>
+        <section class="information-container">
             <h1>
                 Our Location.
             </h1>
@@ -94,7 +99,7 @@
                 (613) 727-4723 x7711 <br>
             </p>
             <div class="googlemap">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11215.830567098932!2d-75.76352116045516!3d45.34966731559439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0722395fc63d%3A0x35c46b5ff47a522!2sAlgonquin%20College%2C%201385%20Woodroffe%20Ave%2C%20Nepean%2C%20ON%20K2G%203G7!5e0!3m2!1sen!2sca!4v1615495153342!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe class="googlemap-1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11215.830567098932!2d-75.76352116045516!3d45.34966731559439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0722395fc63d%3A0x35c46b5ff47a522!2sAlgonquin%20College%2C%201385%20Woodroffe%20Ave%2C%20Nepean%2C%20ON%20K2G%203G7!5e0!3m2!1sen!2sca!4v1615495153342!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </section>
     </main>

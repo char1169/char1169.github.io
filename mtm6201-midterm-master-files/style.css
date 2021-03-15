@@ -124,12 +124,15 @@ section {
 }
 
 /* Adding Custom CSS */
-
+/* Adding universal font (raleway) throughout the entire css, as well as setting the colour + the max width of the site.*/
 html {
     font-family: 'raleway', sans-serif;
     color: #3c3b3a;
+    max-width: 100%;
 }
 
+/* MOBILE STYLES */
+/* ** HOME PAGE STARTS HERE ** */
 .logo-image {
     width: 115px;
     height: 100px;
@@ -150,8 +153,14 @@ li a {
     text-decoration: none;
 }
 
+/* Adding a "current page" in bold -> dictates / bolds whichever page you land on */
 li.currentpage {
     font-weight: bold;
+}
+
+.grow {
+    transform: scale(2);
+    transition: 0.3;
 }
 
 .landing-page-1 h1 {
@@ -171,11 +180,14 @@ li.currentpage {
     padding: 20px;
 }
 
+/* Making the icons equally spaced out and aligned with the button below */
 .container {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 100px 100px;
-    padding-left: 20%;
+    grid-template-rows: 120px 100px;
+    padding-left: 15%;
+    padding-right: 20px;
+
 }
 
 .icon-box p {
@@ -184,16 +196,12 @@ li.currentpage {
     padding-top: 0;
 }
 
-
 .container img {
     width: 45px;
     color: #3C3B3A;
 }
 
-.bowling-icon {
-    fill: #3C3B3A;
-}
-
+/* Adding the "get started" button + styles */
 .getstarted {
     background-color: #26A682;
     border: none;
@@ -203,29 +211,41 @@ li.currentpage {
     padding: 10px;
     border-radius: 40px;
     width: 75%;
+    box-shadow: 0px 10px 10px rgba(18, 74, 58, 0.5);
 }
 
+.getstarted:hover{
+    background: black;
+    opacity: 1;
+    transition: 0.7s;
+}
+
+/* Centering the button and adding padding */
 .button-container-1 {
     display: flex;
     justify-content: center;
+    padding-top: 10%;
 }
 
+/* Adding the "books" image */
 .books {
-    width: 80%;
+    width: 70%;
     padding: 50px;
 }
 
-/* Display none is to hide the scroll down option */
+/* Display none is to hide the scroll down option (which will be added in other styles) */
 .scroll-down {
     display: none;
 }
 
+/* Fitting the "graduation-image" to its content size as well as setting the height */
 .graduation-image {
     width: 100%;
     height: 185%;
     object-fit: cover;
 } 
 
+/* Discover. Algonquin College SECTION */
 .discover-section h2 {
     font-weight: 600;
     font-size: 35px;
@@ -251,7 +271,7 @@ li.currentpage {
     padding: 5%;
 }
 
-/* Fix button size + padding */
+/* Adding the "learnmore" button + styles */
 .learnmore {
     background-color: #26A682;
     border: none;
@@ -260,16 +280,17 @@ li.currentpage {
     color: white;
     padding: 15px;
     border-radius: 40px;
-    width: 30%;
-    margin-left: 300px;
+    width: 40%;
+    margin-left: 150px;
     margin-bottom: 20px;
     box-shadow: 0px 10px 10px rgba(18, 74, 58, 0.5);
 }
 
 .button-container-2 {
-    padding-bottom: 5%;;
+    padding-bottom: 5%;
 }
 
+/* Dijanelle section -> centering her profile */
 .dijanelle {
     border-radius: 50%;
     width: 40%;
@@ -312,7 +333,7 @@ li.currentpage {
     object-fit: cover;
 }
 
-/* Discover. entertainment */
+/* Discover. Entertainment SECTION */
 .entertainment-container h2 {
     font-weight: 600;
     font-size: 35px;
@@ -342,6 +363,7 @@ li.currentpage {
     padding: 5%;
 }
 
+/* Adding another "learnmore-2" button */
 .learnmore-2 {
     background-color: #26A682;
     border: none;
@@ -350,32 +372,1485 @@ li.currentpage {
     color: white;
     padding: 15px;
     border-radius: 40px;
-    width: 30%;
-    margin-left: 300px;
+    width: 40%;
+    margin-left: 150px;
     margin-bottom: 20px;
     box-shadow: 0px 10px 10px rgba(18, 74, 58, 0.5);
 }
 
 .button-container-3 {
     padding-bottom: 5%;
-    padding-top: 5%;
 }
 
+/* FOOTER Starts Here */
 footer {
     background-color: #3C3B3A;
     color: #F2F2F2;
-    padding: 10%;
+    padding-bottom: 10%;
 }
 
 footer h3 {
     font-size: 25px;
     display: flex;
     justify-content: center;
+    padding-top: 15%;
 }
 
 footer .social-icons {
     display: flex;
     justify-content: center;
-    justify-content: space-around;
+    align-items: center;
+}
+
+/* Adding social media icons and spacing them out */
+.socials {
+    padding: 10px;
+}
+
+/* Adding a "scroll-up" arrow to go back to the top of the page */
+.scroll-up-arrow {
+    width: 50%;
+}
+
+.scroll-up {
+    padding-left: 85%;
+}
+
+.scroll-up p {
+    font-size: 9px;
+}
+
+
+.scroll-up {
+    text-align: center;
+    position: relative;
+    width: 10%;
+    margin-top: -50px;
+    font-size: 9px;
+    padding-left: 80%;
+    padding-bottom: 30px;
+}
+
+/* ** ABOUT PAGE STARTS HERE ** */
+#maintitle-2 h1 {
+    font-size: 40px;
+    font-weight: bold;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+
+#mainsectionabout p {
+    font-size: 18px;
+    width: 90%;
+    line-height: 35px;
+    padding: 20px;
+}
+
+.construction-image {
+    width: 80%;
+    padding: 30px;
+    padding-top: 0px;
+}
+
+.about-image {
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
+}
+
+.about h1 {
+    position: absolute;
+    color: #F2F2F2;
+    margin-top: -150px;
+    margin-left: 120px;
+    font-weight: bold;
+    font-size: 50px;
+    background-color: black;
+}
+
+/* Adding a green Layer on top of the "about-image" as well as text */
+
+.about {
+    backgorund-color: #F2F2F2;
+}
+.about h2{
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;  
+}
+
+/* Adding a green Layer on top of the "services-image" as well as text */
+.services-image {
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
+    position: relative;
+}
+
+.services h1 {
+    position: absolute;
+    color: #F2F2F2;
+    margin-top: -150px;
+    margin-left: 85px;
+    font-weight: bold;
+    font-size: 50px;
+    background-color: black;
+}
+
+
+
+.services p {
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 35px;
+    width: 80%;
+    padding-bottom: 20px;
+}
+
+.services h2 {
+    font-size: 30px;
+    font-weight: bold;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px; 
+}
+
+.services h3 {
+    font-size: 20px;
+    width: 90%;
+    padding-bottom: 5px;
+    padding-left: 20px; 
+    color: #26A682;
+}
+
+.needabreak-image {
+    display: none;;
+}
+
+.bowling-image {
+    display: none;
+}
+
+/* Adding the News Letter Subscribe Box */
+#subscribe {
+    background-color: #3C3B3A;
+    height: 120px;
+    color: #F2F2F2;
+}
+
+.subscribe {
+    border: none;
+    background-color: #26A682;
+    color: #F2F2F2;
+    font-size: 22px;
+    font-weight: bold;
+    color: #F2F2F2;
+    padding: 5px;
+    border-radius: 40px;
+    width: 40%;
+}
+
+.button-container-4 {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+#subscribe h4 {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.fitness-image {
+    display: none;
+}
+
+#fitness-rooms h2{
+    font-size: 30px;
+    font-weight: bold;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px; 
+}
+
+#fitness-rooms h3 {
+    font-size: 20px;
+    width: 90%;
+    padding-bottom: 5px;
+    padding-left: 20px; 
+    color: #26A682;
+}
+
+#fitness-rooms p {
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 35px;
+    width: 80%;
+    padding-bottom: 20px;
+}
+
+.climbing-image {
+    display: none;
+}
+
+#indoor-climbing h2{
+    font-size: 30px;
+    font-weight: bold;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px; 
+}
+
+#indoor-climbing h3 {
+    font-size: 20px;
+    width: 90%;
+    padding-bottom: 5px;
+    padding-left: 20px; 
+    color: #26A682;
+}
+
+#indoor-climbing p {
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 35px;
+    width: 80%;
+    padding-bottom: 20px;
+}
+
+/* Adding the "thankyou" section witch "sponsors"... */
+#thankyou h1 {
+    font-size: 57px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.title-container {
+    text-align: center;
+}
+
+.sponsors .ac-sponsors {
+    width: 200px;
+    padding: 30px;
+    padding-left: 90px;
+}
+
+/* ** CONTACT PAGE STARTS HERE ** */
+.maintitle-3 h1{
+    font-size: 50px;
+    font-weight: bold;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+
+.maintitle-3 p {
+    font-size: 20px;
+    width: 80%;
+    line-height: 35px;
+    padding: 20px;
+}
+
+.contact-icons-image {
+    width: 80%;
+    padding: 30px;
+}
+
+.contactsectionbox h2 {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/* Adding the Contact form / Box + Styles */
+.contactsectionbox {
+    background-color: #26A682;
+    width: 80%;
+    height: 540px;
+    border-radius: 25px;
+    margin-left: 10%;
+    color: #F2F2F2;
+}
+
+/* Making it equally spaced throughout */
+.contactform {
+    padding-left: 20px;
+}
+
+.sectioncontact {
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.sectioncontact h3 {
+    padding-bottom: 2%;
+}
+
+/* Targetting the 3 first boxes of the form and changing their styles */
+#fullname,
+#studentnumber,
+#email {
+    width: 90%;
+    border: none;
+    border-radius: 72px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+/* Targetting the place holders of those 3 boxes */
+#fullname,
+#studentnumber,
+#email::placeholder {
+    color: rgba(60, 58, 59, 0.60);
+    font-size: 15px;
+}
+
+/* Message has to be alone since its box is bigger therefore the place holder will move at a lower space. */
+#message {
+    width: 91%;
+    border: none;
+    border-radius: 10px;
+    height: 100px;
+}
+
+/* Chnaged the styles + top positioning */
+#message::placeholder {
+    top: -35px;
+    padding-left: 10px;
+    position: relative;
+    color:rgba(60, 58, 59, 0.60);
+    font-size: 15px;
+}
+
+/* Adding a "submit" button */
+.submitbutton{
+    background-color: #3C3B3A;
+    color: #F2F2F2;
+    border: none;
+    border-radius: 40px;
+    width: 90%;
+    font-size: 27px;
+    font-weight: bold;
+    padding: 5px;
+    line-height: 35px;
+    box-shadow: 0px 10px 10px rgba(18, 74, 58, 0.5);
+}
+
+.contactsectionbox {
+    margin-bottom: 70px;
+}
+
+/* Location information + map is added here */
+.information-container h1{
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.information-container h2{
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.information-container p{
+    font-size: 15px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    line-height: 30px;
+}
+
+/* Making the Google Map fit its content */
+iframe {
+    width: 100%;
+}
+
+
+/* TABLET STYLES */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* ** HOME PAGE STARTS HERE ** */
+    /* Making the logo go to the left side of the header */
+    .logo-image {
+        float: left;
+        padding-right: 200px;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    .grow {
+        transform: scale(2);
+        transition: 0.3;
+    }
+    /* Taking off list styles (bullet points) */
+    nav ul li {
+        font-size: 17px;
+        list-style-type: none;
+        margin-left: 20px;
+    }
+
+    nav ul li a {
+        padding-left: 10px;
+        padding-top: 35px;
+        display: block;
+    }
+    /* Making the header smaller + horizontal */
+    header{
+        height: 85px;
+        padding-bottom: 20px;
+    }
+
+    .landing-page-1 h1 {
+        font-size: 70px;
+        padding-top: 50px;
+        padding-left: 60px;
+    }
+
+    .landing-page-1 p {
+        font-size: 25px;
+        width: 80%;
+        line-height: 30px;
+        padding-left: 60px;
+    }
+
+    .container {
+        display: flex;
+        padding-left: 10%;
+    }
+
+    .icon-box p {
+        color: #26a682;
+        margin-left: -48%;
+        padding-top: 0;
+        font-size: 16px;
+    }
+
+    .getstarted {
+        font-size: 40px;
+        width: 35%;
+        box-shadow: 0px 10px 10px rgba(18, 74, 58, 0.5);
+    }
+
+    .getstarted:hover{
+        background: black;
+        opacity: 1;
+        transition: 0.7s;
+    }
+
+    .button-container-1 {
+        display: flex;
+        justify-content: center;
+        margin-top: -50px;
+    }
+
+    .books {
+        width: 55%;
+        padding-left: 160px;
+    }
+
+    .scroll-down {
+        padding-left: 50%;
+        padding-bottom: 5%;
+        display: block;
+    }
+
+    .scroll-down-icon {
+        transform: rotate(180deg);
+        width: 13%;
+    }
+
+    .scroll-down p {
+        padding-left: 7px;
+        padding-bottom: 3px;
+        font-size: 15px;
+    }
+
+    .graduation-image {
+        width: 100%;
+        height: 200px; 
+    }
+
+    .discover-section h2 {
+        font-size: 40px;
+        padding-left: 50px;
+    }
+
+    .discover-section h3 {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    .discover-section p {
+        font-size: 18px;
+        width: 91%;
+        padding-left: 50px;
+    }
+
+    .learnmore {
+        font-size: 25px;
+        padding: 10px;
+        width: 30%;
+        margin-left: 450px;
+        margin-bottom: 20px;
+        margin-top: -60px;   
+    }
     
+    #dijanelle-profile {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 60% 10%;
+        padding: 5px;
+    }
+
+    .dijanelle {
+        border-radius: 50%;
+        width: 175px;
+        height: 175px;
+        border: 5px solid white;
+        margin-top: 60px;
+    }
+
+    #dijanelle-profile h4{
+        grid-row: 2;
+    }
+
+    #dijanelle-profile p {
+        font-size: 20px;
+        line-height: 35px;
+        font-weight: normal;
+        padding-top: 15%;
+    }
+
+    .entertainment {
+        width: 100%;
+        height: 200px; 
+    }
+
+    .entertainment-container h2 {
+        font-weight: 600;
+        font-size: 35px;
+        font-style: italic;
+        color: #3C3B3A;
+        padding-bottom: 7px;
+    }
+
+
+    .entertainment-container h2  {
+        font-size: 40px;
+        padding-left: 50px;
+    }
+
+    .entertainment-container h3 {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    .entertainment-container p {
+        font-size: 18px;
+        width: 91%;
+        padding-left: 50px;
+    }
+
+    .button-container-3 {
+        padding-bottom: 10%;
+    }
+
+    .learnmore-2 {
+        font-size: 25px;
+        padding: 10px;
+        width: 30%;
+        margin-left: 450px;
+        margin-bottom: 20px;
+        margin-top: -60px;   
+    }
+
+    .scroll-up {
+        text-align: center;
+        position: relative;
+        width: 10%;
+        margin-top: -60px;
+        font-size: 9px;
+        padding-left: 80%;
+        padding-bottom: 30px;
+    }
+
+    .scroll-up p {
+        font-size: 9px;
+    }
+
+    /* ** ABOUT PAGE STARTS HERE ** */
+    #maintitle-2 h1 {
+        font-size: 60px;
+        padding-top: 50px;
+        padding-left: 60px;
+    }
+
+   #mainsectionabout p {
+        font-size: 23px;
+        width: 80%;
+        line-height: 30px;
+        padding-left: 60px;
+    }
+
+    .construction-image {
+        width: 70%;
+        padding-left: 110px;
+    }
+
+    .about-image {
+        width: 100%;
+        height: 250px; 
+    }
+
+    .about h1 {
+        position: absolute;
+        color: #F2F2F2;
+        margin-top: -150px;
+        margin-left: 300px;
+        font-weight: bold;
+        font-size: 50px;
+        background-color: black;
+    }
+
+    .about h2{
+        font-size: 40px;
+        font-weight: bold;
+        font-style: italic;
+        width: 90%;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        padding-left: 60px;  
+    }
+    
+    .services-image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .services h1 {
+        position: absolute;
+        color: #F2F2F2;
+        margin-top: -150px;
+        margin-left: 300px;
+        font-weight: bold;
+        font-size: 50px;
+        background-color: black;
+    }
+
+    .needabreak-image {
+        width: 215px;
+        height: 317px;
+        display: block;
+        float: left;
+        padding-left: 50px;
+        padding-top: 60px;
+    }
+
+    .needabreak-container h2 {
+        padding-left: 300px;
+        padding-top: 60px;
+    }
+
+    .needabreak-container h3 {
+        padding-left: 300px;
+    }
+
+    .needabreak-container p {
+        padding-left: 300px;
+        width: 55%;
+    }
+
+    .bowling-image {
+        width: 215px;
+        height: 317px;
+        display: block;
+        float: right;
+        padding-right: 50px;
+        padding-top: 100px;
+    }
+    
+    .bowling-container h2 {
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-top: 100px;
+    }
+
+    .bowling-container h3 {
+        padding-left: 50px;
+    }
+
+    .bowling-container p {
+        width: 55%;
+        padding-left: 50px;
+    }
+
+    /* Adding the Subscribe Section with FLex as it will display horizontizally */
+    #subscribe {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding-top: 30px;
+        margin-top: 150px;
+        margin-bottom: 10px;
+    }
+
+    .subscribe {
+        border: none;
+        background-color: #26A682;
+        color: #F2F2F2#
+        font-size: 22px;
+        font-weight: bold;
+        color: #F2F2F2;
+        padding: 5px;
+        border-radius: 40px;
+        width: 140px;
+        height: 45px;
+    }
+
+    #subscribe h4 {
+        padding-right: 80px;
+        padding-left: 20px;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .fitness-image {
+        width: 215px;
+        height: 317px;
+        display: block;
+        float: left;
+        padding-left: 50px;
+        padding-top: 60px;
+    }
+
+    #fitness-rooms h2 {
+        padding-left: 300px;
+        padding-top: 60px;
+    }
+
+    #fitness-rooms h3 {
+        padding-left: 300px;
+    }
+
+    #fitness-rooms p {
+        padding-left: 300px;
+        width: 55%;
+    }
+
+    .climbing-image{
+        width: 215px;
+        height: 317px;
+        display: block;
+        float: right;
+        padding-right: 50px;
+        padding-top: 100px;
+    }
+
+    #indoor-climbing h2 {
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-top: 100px;
+    }
+
+    #indoor-climbing h3 {
+        padding-left: 50px;
+    }
+
+    #indoor-climbing p {
+        width: 55%;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+
+    #thankyou {
+        font-size: 56px;
+        width: 90%;
+        padding-left: 10%;
+        padding-top: 50px;
+    }
+
+    .sponsors {
+        padding: 100px;
+    }
+
+    .socials-icons {
+        padding: 40px;
+    }
+
+    /* ** CONTACT PAGE STARTS HERE ** */
+
+    .maintitle-3 h1 {
+        font-size: 70px;
+        padding-top: 50px;
+        padding-left: 60px;
+    }
+
+    .maintitle-3 p {
+        font-size: 25px;
+        width: 80%;
+        line-height: 30px;
+        padding-left: 60px;
+    }
+
+    .contact-icons-image {
+        width: 70%;
+        padding-left: 95px;
+        padding-top: 10px;
+    }
+
+    .contactsectionbox {
+        width: 80%;
+        height: 750px;
+        border-radius: 25px;
+        margin-left: 10%;
+    }
+
+    .contactsectionbox h2 {
+        font-size: 70px;
+    }    
+
+    #fullname,
+    #studentnumber,
+    #email {
+        width: 90%;
+        border: none;
+        border-radius: 72px;
+        height: 50px;
+        padding-left: 20px;
+    }
+
+    #message {
+        width: 91%;
+        border: none;
+        border-radius: 10px;
+        height: 150px;
+    }
+
+    #message::placeholder {
+        top: -55px;
+        padding-left: 20px;
+    }
+
+    .submitbutton{
+        border: none;
+        border-radius: 40px;
+        width: 75%;
+        font-size: 40px;
+        font-weight: bold;
+        padding: 10px;
+        line-height: 35px;
+        box-shadow: 0px 10px 10px rgba(18, 74, 58, 0.5);
+    }
+
+    .submit-button-container {
+        margin-left: 350px;
+        padding-top: 20px;
+    }
+
+    .information-container h1{
+        font-size: 70px;
+        font-weight: bold;
+        padding-left: 60px;
+    }
+
+    .information-container h2{
+        font-size: 40px;
+        padding-left: 60px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    .information-container p{
+        font-size: 18px;
+        padding-left: 60px;
+        padding-bottom: 15px;
+        line-height: 30px;
+    }
+}
+
+/* DESKTOP STYLES */
+@media screen and (min-width: 1024px) {
+
+    header{
+        height: 85px;
+        padding-bottom: 20px;
+    }
+
+    .logo-image {
+        float: left;
+        padding-right: 950px;
+    }
+
+    
+    nav ul {
+        display: flex;
+        float: right;
+    }  
+
+    .grow {
+        transform: scale(2);
+        transition: 0.3;
+    }
+
+    /* Taking off list styles (bullet points) */
+    nav ul li {
+        font-size: 17px;
+        list-style-type: none;
+        margin-left: 10px;
+        padding-right: 30px;
+    }
+
+    nav ul li a {
+        padding-left: 5px;
+        padding-top: 35px;
+        display: block;
+    }
+
+    .landing-page-1 h1 {
+        font-size: 70px;
+        padding-top: 60px;
+        width: 40%;
+        padding-left: 60px;
+        padding-bottom: 20px;
+    }
+
+    .landing-page-1 p {
+        font-size: 25px;
+        width: 40%;
+        line-height: 29px;
+        padding-left: 60px;
+    }
+
+    .container {
+        display: flex;
+        align: center;
+        padding-left: 6%;
+        padding-top: 20px;
+    }
+
+    .container img {
+        width: 40px;
+    }
+
+    .icon-box p {
+        color: #26a682;
+        margin-left: -60px;
+        margin-right: 40px;
+        padding-top: 10px;
+        display: flex;
+        font-size: 15px;
+        line-height: 19px;  
+        text-align: left;
+    }
+
+    .getstarted {
+        font-size: 40px;
+        width: 20%;
+        box-shadow: 0px 10px 10px rgba(18, 74, 58, 0.5);
+    }
+
+    .getstarted:hover{
+        background: black;
+        opacity: 1;
+        transition: 0.7s;
+    }
+
+    .button-container-1 {
+        display: flex;
+        justify-content: left;
+        margin-left: 65px;
+        padding-top: 15px;
+    }
+
+    .books {
+        float: right;
+        width: 40%;
+        margin-top: -500px;
+    }
+
+    .scroll-down {
+        padding-left: 50%;
+        padding-bottom: 5%;
+        display: block;
+    }
+
+    .scroll-down-icon {
+        transform: rotate(180deg);
+        width: 50px;
+    }
+
+    .scroll-down p {
+        padding-left: 7px;
+        padding-bottom: 3px;
+        font-size: 15px;
+    }
+
+    .graduation-image {
+        width: 800px;
+        height: 450px; 
+        float: left;
+    }
+
+    .discover-section h2 {
+        font-size: 40px;
+    
+    }
+
+    .discover-section h3 {
+        font-size: 30px;
+
+    }
+
+    .discover-section p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .discover-section-2 {
+        padding-left: 850px; 
+        padding-top: 2px;
+        background-color: #F2F2F2;
+    }
+
+    .discover-section {
+        background-color: #F2F2F2;
+        padding-top: 50px;
+    }
+
+    .button-container-2 {
+        padding-left: 1000px; 
+        margin-top: 20px;
+    }
+
+    #dijanelle-profile {
+        display: grid;
+        grid-template-columns: 25% 10% 60%;
+        grid-template-rows: 100%;
+        padding: 20px;
+    }
+
+    .dijanelle {
+        border-radius: 50%;
+        width: 175px;
+        height: 175px;
+        border: 5px solid white;
+        margin-top: 20px;
+    }
+
+    #dijanelle-profile h4{
+        grid-column: 2;
+        padding-top: 90px;
+        
+    }
+
+    #dijanelle-profile p {
+        font-size: 20px;
+        line-height: 35px;
+        font-weight: normal;
+        padding-top: 50px;
+        grid-column: 3;
+    }
+
+    .entertainment {
+        float: right;
+        width: 800px;
+        height: 430px; 
+        padding-top: 50px;  
+    }
+
+    .learnmore-2 {
+        font-size: 25px;
+        padding: 15px;
+        width: 12%;
+        margin-left: 400px;
+        margin-top: -50px;  
+    }
+
+
+    footer {
+        background-color: #3C3B3A;
+        color: #F2F2F2;
+    }
+    
+    footer h3 {
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+    }
+    
+    footer .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+    
+    /* Adding social media icons and spacing them out */
+    .socials {
+        padding: 10px;
+    }
+
+    .scroll-up-arrow {
+        width: 35%;
+    }
+    
+    .scroll-up {
+        padding-left: 90%;
+    }
+    
+    .scroll-up p {
+        font-size: 9px;
+    }
+
+     /* ** ABOUT PAGE STARTS HERE ** */
+     #maintitle-2 h1 {
+        font-size: 60px;
+        padding-top: 60px;
+        padding-left: 60px;
+        width: 50%;
+    }
+
+    #mainsectionabout p {
+        font-size: 23px;
+        width: 40%;
+        line-height: 30px;
+        padding-left: 60px;
+        padding-top: 30px;
+    }
+    
+    .construction-image {
+        float: right;
+        width: 40%;
+        margin-top: -400px;
+    }
+
+    .about h1 {
+        position: absolute;
+        color: #F2F2F2;
+        margin-top: -150px;
+        margin-left: 650px;
+        font-weight: bold;
+        font-size: 50px;
+        background-color: black;
+    }
+
+    .about-image {
+        width: 100%;
+        height: 225px; 
+    }
+
+    .about-info h2{
+        font-size: 40px;
+        font-weight: bold;
+        font-style: italic;
+        width: 90%;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        padding-left: 60px;  
+    }
+
+    .about h2 {
+        padding-left: 60px;
+        font-size: 40px;
+    }
+
+    .services-image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .services h1 {
+        position: absolute;
+        color: #F2F2F2;
+        margin-top: -150px;
+        margin-left: 650px;
+        font-weight: bold;
+        font-size: 50px;
+        background-color: black;
+    }
+
+    .needabreak-image {
+        width: 700px;
+        height: 300px;
+        display: block;
+        float: left;
+        padding-left: 50px;
+        padding-top: 60px;
+        object-fit: cover;
+    }
+
+    .needabreak-container h2 {
+        padding-left: 800px;
+        padding-top: 60px;
+    }
+
+    .needabreak-container h3 {
+        padding-left: 800px;
+    }
+
+    .needabreak-container p {
+        padding-left: 800px;
+        width: 40%;
+        padding-bottom: 80px;
+    }
+
+    .bowling-image {
+        width: 700px;
+        height: 300px;
+        display: block;
+        float: right;
+        padding-right: 50px;
+        padding-top: 100px;
+    }
+    
+    .bowling-container {
+        background-color: #F2F2F2;
+    }
+
+    .bowling-container h2 {
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-top: 100px;
+    }
+
+    .bowling-container h3 {
+        padding-left: 50px;
+    }
+
+    .bowling-container p {
+        width: 55%;
+        padding-left: 50px;
+        padding-bottom: 150px;
+    }
+
+    .fitness-image {
+        width: 700px;
+        height: 300px;
+        display: block;
+        float: left;
+        padding-left: 50px;
+        padding-top: 60px;
+    }
+
+    #fitness-rooms h2 {
+        padding-left: 800px;
+        padding-top: 60px;
+    }
+
+    #fitness-rooms h3 {
+        padding-left: 800px;
+    }
+
+    #fitness-rooms p {
+        padding-left: 800px;
+        width: 40%;
+        padding-bottom: 80px;
+    }
+
+    .climbing-image{
+        width: 700px;
+        height: 300px;
+        display: block;
+        float: right;
+        padding-right: 50px;
+        padding-top: 100px;
+    }
+
+    #indoor-climbing{
+        background-color: #F2F2F2;
+        height: 500px;
+    }
+    #indoor-climbing h2 {
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-top: 100px;
+    }
+
+    #indoor-climbing h3 {
+        padding-left: 50px;
+    }
+
+    #indoor-climbing p {
+        width: 55%;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+
+    .sponsors {
+        padding: 30px;
+        display: flex;
+    }
+
+    footer {
+        background-color: #3C3B3A;
+        color: #F2F2F2;
+    }
+    
+    footer h3 {
+        font-size: 30px;
+        margin-left: 650px;
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+    }
+    
+    footer .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+
+   /* ** CONTACT PAGE STARTS HERE ** */
+
+    .maintitle-3 h1 {
+        font-size: 60px;
+        padding-top: 60px;
+        padding-left: 60px;
+        width: 50%;
+    }
+
+    .maintitle-3 p {
+        font-size: 23px;
+        width: 60%;
+        line-height: 30px;
+        padding-left: 60px;
+        padding-top: 30px;
+    }
+
+    .contact-icons-image {
+        width: 50%;
+        padding-left: 120px;
+    }
+
+    .contactsectionbox {
+        float: right;
+        width: 30%;
+        height: 750px;
+        margin-top: -830px;
+        margin-right: 60px;
+    }
+
+    .contactsectionbox h2 {
+        font-size: 60px;
+    }    
+
+    #fullname,
+    #studentnumber,
+    #email {
+        width: 90%;
+        border: none;
+        border-radius: 72px;
+        height: 50px;
+        padding-left: 20px;
+    }
+
+    #message {
+        width: 91%;
+        border: none;
+        border-radius: 10px;
+        height: 150px;
+    }
+
+    #message::placeholder {
+        top: -55px;
+        padding-left: 20px;
+    }
+
+    .submitbutton{
+        border: none;
+        border-radius: 40px;
+        width: 80%;
+        font-size: 35px;
+        font-weight: bold;
+        padding: 5px;
+        line-height: 35px;
+        box-shadow: 0px 10px 10px rgba(18, 74, 58, 0.5);
+    }
+
+    .submit-button-container {
+        margin-left: 220px;
+        padding-top: 20px;
+    }
+
+    .information-container{
+        margin-bottom: 200px;
+    }
+
+
+    .information-container h1{
+        font-size: 70px;
+        font-weight: bold;
+        padding-left: 60px;
+    }
+
+    .information-container h2{
+        font-size: 40px;
+        padding-left: 60px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    .information-container p{
+        font-size: 18px;
+        padding-left: 60px;
+        padding-bottom: 15px;
+        line-height: 30px;
+    }
+
+    .googlemap {
+        float: right;
+        width: 35%;
+        height: 500px;
+        margin-top: -400px;
+        padding: 70px;
+    }
+
+    footer {
+        background-color: #3C3B3A;
+        color: #F2F2F2;
+    }
+    
+    footer h3 {
+        font-size: 30px;
+        margin-left: -5px;
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+    }
+    
+    footer .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+
+
+
+
+    
+
+
+
+
+
 }

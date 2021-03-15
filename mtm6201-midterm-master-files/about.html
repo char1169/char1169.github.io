@@ -16,6 +16,7 @@
 <body>
 
     <header>
+        <nav>
         <ul>
             <li>
                 <img class="logo-image" src="images/logo.svg" alt="logo">
@@ -23,41 +24,53 @@
             <li>
                 <a href="index.html">Home</a>
             </li>
+            <div class="grow">
             <li class="currentpage">
                 <a href="about.html">About</a>
             </li>
+            </div>
             <li>
                 <a href="contact.html">Contact</a>
             </li>
+        </li>
         </ul>
+        </nav>
     </header>
-
-    <main id="mainsectionabout" class="mainsectionabout">
+<main>
+    <!-- Adding the Main Section Of the About HTML -->
+    <div id="mainsectionabout" class="mainsectionabout">
         <section class="landing-page-2">
-            <div class="maintitle-2">
+            <div id="maintitle-2">
                 <h1>
-                    What to expect during construction.
+                    What to expect
+                    during
+                    construction.
                 </h1>
                 <p>
                     With construction starting in April 2019 we anticipate the new arrival of the ARC building as early as August 2021.
                 </p>
                 <p class="paragraph-2">
-                    With construction starting in April 2019 we anticipate the new arrival of the ARC building as early as August 2021.
+                    The current SA Fitness Zone and gym will be operating and open as usual. Please visit the Fitness Zone and the Gymnasium for more information on the hours, offerings, and pricing.
                 </p>
-
-                <img src="images/construction.svg" alt="building construction">
             </div>
+                <img class="construction-image" src="images/construction.svg" alt="building construction">
             <section class="about">
+                <div class="layer-image">
                 <img class="about-image" src="images/about.jpg" alt="Algonquin College">
+                </div>
+                <div class="about-info">
+                    <div class="banner">
                 <h1>
                     About
                 </h1>
+                    </div>
                 <h2>
                     Who
                 </h2>
                 <p>
                     is ARC? We are the Athletics & Recreation Centre. This is an exciting venture for our Algonquin Community.  This facility will provide our students with a place to break through perceptual barriers in a welcoming, safe, inclusive and inviting environment for students of all backgrounds, cultures and abilities to spark a movement.
                 </p>
+                </div>
                 <h2>
                     What
                 </h2>
@@ -70,21 +83,29 @@
                 <p>
                     will the ARC building be? The ARC building will be located northeast of the Student Commons building, opposite of the residence. The facility will be an estimated 100,000 square feet! Connected to the Student Commons by a "Plus 15" Pedestrian Link. 
                 </p>
+            </div>
             </section>
             <section class="services">
                 <img class="services-image" src="images/services.jpg" alt="cup of coffee">
                 <h1>
                     Services
                 </h1>
-                <h2>
-                    Need a break?
-                </h2>
-                <h3>
-                    Restaurant & Lounge 
-                </h3>
-                <p>
-                    will have full service throughout the day. Why not come in after a long day of class and order one of our famous poutines. Finished with your food and drink? Why not try out the new billiards area. Grab some friends and dominate them in some pool. Pool, not your thing? Then come on downstairs and try out the new bowling lanes!
-                </p>
+            <div class="about-grid-1">
+                <div class="needabreak-container">
+                    <img class="needabreak-image" src="images/bar.jpg" alt="bar">
+                    <h2>
+                        Need a break?
+                    </h2>
+                    <h3>
+                        Restaurant & Lounge 
+                    </h3>
+                    <p>
+                        will have full service throughout the day. Why not come in after a long day of class and order one of our famous poutines. Finished with your food and drink? Why not try out the new billiards area. Grab some friends and dominate them in some pool. Pool, not your thing? Then come on downstairs and try out the new bowling lanes!
+                    </p>
+                </div>
+            </div>
+            <div class="bowling-container">
+            <img class="bowling-image" src="images/bowling.jpg" alt="bowling">
                 <h2>
                     Competitive Friends?
                 </h2>
@@ -92,18 +113,22 @@
                     Bowling lanes
                 </h3>
                 <p>
-                    are finally here. Grab your friends and book a lane at the Students’ Association Bowling Lanes that will be part of the upcoming ARC! Don't like bowling? Well, look no further. Practice your swing no matter the weather on the Golf Simulator that will be located in the ARC building.
+                are finally here. Grab your friends and book a lane at the Students’ Association Bowling Lanes that will be part of the upcoming ARC! Don't like bowling? Well, look no further. Practice your swing no matter the weather on the Golf Simulator that will be located in the ARC building.
                 </p>
+            </div>
             </section>
             <section id="subscribe">
                 <h4>
                     Keep up to date with our news letter
                 </h4>
                 <div class="button-container-4">
-                    <button type="submit"> Subscribe </button>
+                    <button class="subscribe" type="submit"> Subscribe </button>
                 </div>
             </section>
-            <section>
+            <section id="fitness-rooms">
+            <div class="image-fitness">
+            <img class="fitness-image" src="images/fitness.jpg" alt="fitness">
+            </div>
                 <h2>
                     New year, new me.
                 </h2>
@@ -114,7 +139,8 @@
                     Cardio equipment, free weights, selectorized weight equipment and stretching areas will be located in strategically placed locations to best suit your work-out routine. Indoor walking/running track that will test your endurance with inclines and declines that weave around fitness nods, the gymnasiums and the lounge area.
                 </p>
             </section>
-            <section id="indoorclimbing">
+            <section id="indoor-climbing">
+                <img class="climbing-image" src="images/climbing.jpg" alt="climbing">
                 <h2>
                     Indoor climbing?              
                 </h2>
@@ -125,10 +151,12 @@
                     Test your strength and flexibility on the rock-climbing wall. Add some variety to your fitness routine, the ARC will be able to offer more yoga and fitness classes to fit into your busy schedule. After a busy day of rock climbing or yoga, come and enjoy our new massage therapy area.                 
                 </p>
             </section>
-            <section>
+            <section id="thankyou">
+                <div class="title-container">
                 <h1>
                     Special thank you to the following
                 </h1>
+                </div>
                 <div class="sponsors">
                     <img class="ac-sponsors" src="images/sa.png" alt="Algonquin Students' Association">
                     <img class="ac-sponsors" src="images/AC_ICON_FC_GRN_240x200.png" alt="ac">
@@ -136,6 +164,8 @@
                     <img class="ac-sponsors" src="images/cibc.png" alt="cibc">
                 </div>
             </section>
+            </section>
+            </main>
 
 
             <footer>
