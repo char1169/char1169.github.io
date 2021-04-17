@@ -29,3 +29,16 @@ Making this portfolio taught me that LESS IS MORE!!! Simple portfolios are the w
 
 
 
+
+ASSETS & RESSOURCES 
+
+Fonts : 
+https://fonts.google.com/specimen/Poppins
+
+Images :
+plant.png - https://unsplash.com/photos/yb3hsmz4utg?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+Icons :
+https://iconmonstr.com
+
+
