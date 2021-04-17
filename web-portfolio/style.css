@@ -1,0 +1,771 @@
+/* Adding a standard CSS Reset to reduce browser inconsistencies  */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Also adding HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    line-height: inherit;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Adding Custom CSS */
+/* Adding universal font () throughout the entire css, as well as setting the colour + the max width of the site.*/
+html {
+    font-family: 'Poppins', sans-serif;
+    color: #3c3b3a;
+    max-width: 100%;
+}
+
+
+/* MOBILE STYLES */
+/* ** HOME PAGE STARTS HERE ** */
+.logo-image {
+    width: 200px;
+    height: 100px;
+    padding-left: 20%;
+    padding-top: 20px;
+}
+
+
+.container-nav li {
+    display: inline;
+    padding-left: 45px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.currentpage {
+    color: black;
+    text-decoration: underline;
+}
+
+a,
+a:link a link:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.image-1 {
+    width: 300px;
+    height: 250px;
+    padding: 5%;
+    padding-bottom: 5px;
+    padding-left: 10%;
+}
+
+.image-2 {
+    width: 350px;
+    height: 250px;
+    padding-left: 4%;
+    margin-top: -10px;
+}
+
+.image-3 {
+    width: 340px;
+    height: 250px;
+    padding: 5%;
+    padding-left: 4%;
+
+}
+
+.image-4 {
+    width: 350px;
+    height: 200px;
+    padding-left: 4%;
+    padding-bottom: 50px;
+
+}
+
+.footer {
+    background-color: #A0A0A0;
+    padding: 5%;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials {
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+/* ABOUT PAGE STARTS HERE */
+
+h1 {
+    text-align: center;
+    padding-top: 100px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+.profile-picture {
+    width: 225px;
+    height: 300px;
+    padding: 5%;
+    padding-left: 20%;
+}
+
+p {
+    text-align: center;
+    padding: 5%;
+    line-height: 30px;
+    font-size: 10px;
+}
+
+.plant-2 {
+    display: none;
+}
+
+
+
+/* CONTACT PAGE STARTS HERE */
+/* Adding the Contact form / Box + Styles */
+
+
+.get-in-touch {
+    padding: 5%;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+.contactsectionbox {
+    background-color: #A0A0A0;
+    width: 80%;
+    border-radius: 20px;
+    margin-left: 10%;
+    color: #F2F2F2;
+    margin-bottom: 10%;
+}
+
+/* Making it equally spaced throughout */
+.contactform {
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.sectioncontact {
+    padding-bottom: 20px;
+    font-size: 17px;
+}
+
+.sectioncontact h3 {
+    padding-bottom: 2%;
+}
+
+#fullname,
+#studentnumber,
+#email {
+    width: 90%;
+    border: none;
+    border-radius: 72px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+/* Targetting the place holders of those 3 boxes */
+#fullname,
+#studentnumber,
+#email::placeholder {
+    color: rgba(60, 58, 59, 0.60);
+    font-size: 15px;
+}
+
+/* Message has to be alone since its box is bigger therefore the place holder will move at a lower space. */
+#message {
+    width: 91%;
+    border: none;
+    border-radius: 10px;
+    height: 100px;
+}
+
+/* Chnaged the styles + top positioning */
+#message::placeholder {
+    top: -35px;
+    padding-left: 10px;
+    position: relative;
+    color: rgba(60, 58, 59, 0.60);
+    font-size: 15px;
+}
+
+/* Adding a "submit" button */
+.submitbutton {
+    background-color: #3C3B3A;
+    color: #F2F2F2;
+    border: none;
+    border-radius: 40px;
+    width: 90%;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    line-height: 35px;
+    box-shadow: 155px 155px 155px rgba(1, 0, 0, 0.15);
+}
+
+.socialmediaicons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-contact-icons {
+    padding-left: 10px;
+    padding: 10px;
+}
+
+.phone-email-contact {
+    padding-left: 25%;
+    padding-bottom: 30px;
+}
+
+.phone-email-contact h4 {
+    font-weight: bold;
+    font-size: small;
+}
+
+/* TABLET STYLES */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* ** HOME PAGE STARTS HERE ** */
+
+
+    .logo-image {
+        width: 40%;
+        height: 40%;
+        padding-left: 28%;
+    }
+
+    .container-nav li {
+        display: inline;
+        padding-left: 125px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+
+    .currentpage {
+        color: black;
+        text-decoration: underline;
+    }
+
+    a,
+    a:link a link:visited {
+        text-decoration: none;
+        color: black;
+    }
+
+
+    .image-1 {
+        width: 700px;
+        height: 500px;
+        padding-left: 5%;
+    }
+
+    .image-2 {
+        width: 700px;
+        height: 500px;
+        padding-left: 5%;
+    }
+
+    .image-3 {
+        width: 700px;
+        height: 400px;
+        padding-left: 5%;
+    }
+
+    .image-4 {
+        width: 700px;
+        height: 350px;
+        padding-left: 5%;
+        padding-bottom: 50px;
+    }
+
+    .footer {
+        background-color: #A0A0A0;
+        padding: 5%;
+    }
+
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .socials-icons {
+        width: 50px;
+        height: 50px;
+    }
+
+    .socials {
+        padding: 30px;
+    }
+
+
+    /* ABOUT PAGE STARTS HERE */
+
+    h1 {
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 30px;
+    }
+
+    .profile-picture {
+        width: 315px;
+        height: 400px;
+        padding: 5%;
+        padding-left: 5%;
+    }
+
+    .paragraph-1 {
+        text-align: left;
+        font-size: 15px;
+        margin-top: -480px;
+        padding-left: 50%;
+        line-height: 30px;
+    }
+
+
+    .paragraph-2 {
+        text-align: left;
+        font-size: 15px;
+        line-height: 30px;
+        margin-bottom: 100px;
+        padding-top: 70px;
+    }
+
+    /* CONTACT PAGE STARTS HERE */
+
+    .get-in-touch {
+        font-size: 30px;
+    }
+
+    .contactsectionbox {
+        background-color: #A0A0A0;
+        width: 80%;
+        border-radius: 30px;
+        margin-left: 10%;
+        color: #F2F2F2;
+        margin-bottom: 10%;
+    }
+
+    /* Making it equally spaced throughout */
+    .contactform {
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 10%;
+    }
+
+    .sectioncontact {
+        padding-bottom: 20px;
+        font-size: 25px;
+    }
+
+    .sectioncontact h3 {
+        padding-bottom: 2%;
+    }
+
+    #fullname,
+    #studentnumber,
+    #email {
+        width: 90%;
+        border: none;
+        border-radius: 72px;
+        height: 60px;
+        padding-left: 10px;
+    }
+
+    /* Targetting the place holders of those 3 boxes */
+    #fullname,
+    #studentnumber,
+    #email::placeholder {
+        color: rgba(60, 58, 59, 0.60);
+        font-size: 20px;
+    }
+
+    /* Message has to be alone since its box is bigger therefore the place holder will move at a lower space. */
+    #message {
+        width: 91%;
+        border: none;
+        border-radius: 10px;
+        height: 100px;
+    }
+
+    /* Chnaged the styles + top positioning */
+    #message::placeholder {
+        top: -25px;
+        padding-left: 10px;
+        position: relative;
+        color: rgba(60, 58, 59, 0.60);
+        font-size: 20px;
+    }
+
+    /* Adding a "submit" button */
+    .submitbutton {
+        background-color: #3C3B3A;
+        color: #F2F2F2;
+        border: none;
+        border-radius: 40px;
+        width: 90%;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 5px;
+        line-height: 50px;
+        box-shadow: 155px 155px 155px rgba(1, 0, 0, 0.15);
+        margin-top: 30px;
+    }
+
+    .contact-icons {
+        width: 50px;
+        height: 100%;
+    }
+
+    .social-contact-icons {
+        margin-right: 10px;
+        margin-bottom: 30px;
+    }
+
+    .phone-email-contact h4 {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+}
+
+/* DESKTOP STYLES */
+@media screen and (min-width: 1440px) {
+
+    /* HOME PAGE STARTS HERE */
+    .logo-image {
+        width: 500px;
+        height: 230px;
+        padding-left: 30%;
+        position: relative;
+    }
+
+
+    .currentpage {
+        color: black;
+        text-decoration: underline;
+    }
+
+    a,
+    a:link,
+    a link:visited {
+        text-decoration: none;
+        color: black;
+    }
+
+    .container-nav li {
+        display: inline;
+        padding-left: 250px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+
+    .image-1 {
+        width: 900px;
+        height: 650px;
+        padding-left: 20%;
+    }
+
+    .image-2 {
+        width: 900px;
+        height: 700px;
+        padding-left: 20%;
+        margin-top: -150px;
+    }
+
+    .image-3 {
+        width: 900px;
+        height: 500px;
+        padding-left: 20%;
+        margin-top: 5px;
+    }
+
+    .image-4 {
+        width: 900px;
+        height: 400px;
+        padding-left: 20%;
+        padding-bottom: 50px;
+        margin-top: 5px;
+    }
+
+    .footer {
+        background-color: #A0A0A0;
+        padding: 5%;
+    }
+
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .socials-icons {
+        width: 65px;
+        height: 65px;
+    }
+
+    .socials {
+        padding: 60px;
+    }
+
+    /* ABOUT PAGE STARTS HERE */
+
+    h1 {
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 35px;
+    }
+
+    .profile-picture {
+        width: 500px;
+        height: 650px;
+        padding-left: 10%;
+        margin-top: -50px;
+    }
+
+    .paragraph-1 {
+        text-align: left;
+        font-size: 25px;
+        margin-top: -750px;
+        padding-left: 50%;
+        line-height: 60px;
+    }
+
+    .paragraph-2 {
+        text-align: center;
+        font-size: 25px;
+        line-height: 50px;
+        margin-bottom: 100px;
+        padding-top: 100px;
+        margin: 40px;
+    }
+
+    /* CONTACT PAGE STARTS HERE */
+
+    .get-in-touch {
+        font-size: 40px;
+    }
+
+    .contactsectionbox {
+        background-color: #A0A0A0;
+        width: 70%;
+        border-radius: 30px;
+        margin-left: 15%;
+        color: #F2F2F2;
+        margin-bottom: 10%;
+    }
+
+    /* Making it equally spaced throughout */
+    .contactform {
+        padding-left: 40px;
+        padding-top: 30px;
+        padding-bottom: 10%;
+    }
+
+    .sectioncontact {
+        padding-bottom: 20px;
+        font-size: 35px;
+    }
+
+    .sectioncontact h3 {
+        padding-bottom: 2%;
+    }
+
+    #fullname,
+    #studentnumber,
+    #email {
+        width: 90%;
+        border: none;
+        border-radius: 72px;
+        height: 80px;
+        padding-left: 20px;
+    }
+
+    /* Targetting the place holders of those 3 boxes */
+    #fullname,
+    #studentnumber,
+    #email::placeholder {
+        color: rgba(60, 58, 59, 0.60);
+        font-size: 25px;
+    }
+
+    /* Message has to be alone since its box is bigger therefore the place holder will move at a lower space. */
+    #message {
+        width: 91%;
+        border: none;
+        border-radius: 10px;
+        height: 100px;
+    }
+
+    /* Chnaged the styles + top positioning */
+    #message::placeholder {
+        top: -20px;
+        padding-left: 20px;
+        position: relative;
+        color: rgba(60, 58, 59, 0.60);
+        font-size: 25px;
+    }
+
+    /* Adding a "submit" button */
+    .submitbutton {
+        background-color: #3C3B3A;
+        color: #F2F2F2;
+        border: none;
+        border-radius: 40px;
+        width: 90%;
+        font-size: 40px;
+        font-weight: bold;
+        padding: 5px;
+        line-height: 80px;
+        box-shadow: 155px 155px 155px rgba(1, 0, 0, 0.15);
+        margin-top: 30px;
+    }
+
+    .contact-icons {
+        width: 60px;
+        height: 100%;
+    }
+
+    .social-contact-icons {
+        margin-right: 10px;
+        margin-bottom: 30px;
+    }
+
+    .phone-email-contact h4 {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+}
