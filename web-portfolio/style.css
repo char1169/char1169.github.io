@@ -155,11 +155,16 @@ html {
     text-decoration: underline;
 }
 
+/* Adding an active state to the navigation bar */
+
 a,
-a:link a link:visited {
+a:link 
+a link:visited {
     text-decoration: none;
     color: black;
 }
+
+/* Images of my work - home page */
 
 .image-1 {
     width: 300px;
@@ -191,6 +196,8 @@ a:link a link:visited {
     padding-bottom: 50px;
 
 }
+
+/* Adding the footer */
 
 .footer {
     background-color: #A0A0A0;
@@ -370,8 +377,10 @@ p {
         text-decoration: underline;
     }
 
+    /* Adding an active state to the navigation. */
     a,
-    a:link a link:visited {
+    a:link 
+    a link:visited {
         text-decoration: none;
         color: black;
     }
@@ -573,6 +582,7 @@ p {
         text-decoration: underline;
     }
 
+    /* Adding an active state to the navigation */
     a,
     a:link,
     a link:visited {
@@ -587,6 +597,8 @@ p {
         font-weight: bold;
     }
 
+
+    /* My work images - home page */
 
     .image-1 {
         width: 900px;
